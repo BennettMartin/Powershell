@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scriptdata>
+    <required>
+        <applist>
+            <app>"ImaginaryApp1"</app>
+            <app>"ImaginaryApp2"</app>
+            <app>"ImaginaryApp3"</app>
+            <app>"ImaginaryApp4"</app>
+        </applist>
+        <installers>
+            <args>\\ExampleDomain.dom\Path\To\Installer\Installer.msi,, /qn,, *ImaginaryApp1*</args>
+            <args>\\ExampleDomain.dom\Path\To\Installer\Installer.msi,, /qn,, *ImaginaryApp2*</args>
+            <args>\\ExampleDomain.dom\Path\To\Installer\Installer.msi,, /quiet /passive,, *ImaginaryApp3*</args>
+            <args>\\ExampleDomain.dom\Path\To\Installer\Installer.msi,, /q,, *ImaginaryApp4*</args>
+        </installers>
+        <temppath>
+            <path>\\ExampleDomain.dom\Path\To\Installer\Installer.msi</path>
+        </temppath>
+    </required>
+    <Optional>
+        <applist>
+            <app>"ProgNam"</app>
+            <app>"ProgNam"</app>
+            <app>"ProgNam"</app>
+        </applist>
+        <installers>
+            <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+            <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+            <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+        </installers>
+        <installerpath>
+            <path>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</path>
+            <path>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</path>
+        </installerpath>
+    </Optional>
+    <MoreOpt>
+        <applist>
+            <app>"ProgNam"</app>
+            <app>"ProgNam"</app>
+        </applist>
+        <installers>
+            <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+            <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+        </installers>
+    </MoreOpt>
+    <EvenMore>
+        <Type1>
+            <applist>
+                <app>"ProgNam"</app>
+                <app>"ProgNam"</app>
+                <app>"ProgNam"</app>
+            </applist>
+            <installers>
+                <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+                <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+                <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+            </installers>
+        </Type1>
+        <Type2>
+            <applist>
+                <app>"ProgNam"</app>
+                <app>"ProgNam"</app>
+            </applist>
+            <installers>
+                <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+                <args>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</args>
+            </installers>
+        </Type2>
+    </EvenMore>
+    <additionalapps>
+        <applist>
+            <Sample1>"chameleon"</Sample1>
+        </applist>
+        <args>
+            <Sample1>\Path\To\Installer,, /Installer /Arguments,, *ProgramName*</Sample1>
+        </args>
+    </additionalapps>
+</scriptdata>
